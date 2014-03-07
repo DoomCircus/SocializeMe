@@ -1,0 +1,128 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context=".Settings" >
+
+        <Button
+        android:id="@+id/button_Save"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:layout_toRightOf="@+id/button_Back"
+        android:onClick="save"
+        android:text="@string/text_save" />
+
+    <Button
+        android:id="@+id/button_Back"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/button_Save"
+        android:layout_alignParentLeft="true"
+        android:onClick="Pull"
+        android:text="@string/text_pull" />
+
+    <TextView
+        android:id="@+id/textView_Name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:text="@string/text_name" />
+
+    <TextView
+        android:id="@+id/textView_Number"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/editText_Name"
+        android:text="@string/text_phone" />
+
+    <TextView
+        android:id="@+id/textView_Email"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/editText_Number"
+        android:text="@string/text_email" />
+
+    <TextView
+        android:id="@+id/textView_Twitter"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/editText_Email"
+        android:text="@string/text_twitter" />
+
+    <EditText
+        android:id="@+id/editText_Name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/textView_Name"
+        android:layout_alignRight="@+id/button_Save"
+        android:layout_below="@+id/textView_Name"
+        android:ems="10"
+        android:hint="@string/text_name"
+        android:inputType="textPersonName" >
+        
+        <requestFocus />
+    </EditText>
+
+    <EditText
+        android:id="@+id/editText_Number"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/textView_Number"
+        android:layout_alignRight="@+id/editText_Name"
+        android:layout_below="@+id/textView_Number"
+        android:ems="10"
+        android:hint="@string/text_phone"
+        android:inputType="phone" />
+
+        
+
+    <EditText
+        android:id="@+id/editText_Email"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/textView_Email"
+        android:layout_alignRight="@+id/editText_Number"
+        android:layout_below="@+id/textView_Email"
+        android:ems="10"
+        android:hint="@string/text_email"
+        android:inputType="textEmailAddress" />
+
+    <EditText
+        android:id="@+id/editText_Twitter"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/textView_Twitter"
+        android:layout_alignRight="@+id/editText_Email"
+        android:layout_below="@+id/textView_Twitter"
+        android:ems="10"
+        android:hint="@string/text_twitter" />
+
+    <TextView
+        android:id="@+id/textView_fb"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/editText_Twitter"
+        android:text="@string/text_facebook" />
+
+    <EditText
+        android:id="@+id/editText_Facebook"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignRight="@+id/editText_Twitter"
+        android:layout_below="@+id/textView_fb"
+        android:ems="10" 
+		android:hint="@string/text_facebook" />
+    
+</RelativeLayout>

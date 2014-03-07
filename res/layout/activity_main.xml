@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="horizontal" >
+
+    <Button
+        android:id="@+id/button_Setup"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:onClick="settings"
+        android:text="@string/button_settings" />
+
+    <Button
+        android:id="@+id/button_NFC"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentTop="true"
+        android:onClick="NFC"
+        android:text="@string/text_nfc" />
+
+    <Button
+        android:id="@+id/QREncode"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/button_NFC"
+        android:layout_marginTop="16dp"
+        android:onClick="encodeQR"
+        android:text="@string/qr_encode" />
+
+    <Button
+        android:id="@+id/QRScan"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/QREncode"
+        android:layout_alignBottom="@+id/QREncode"
+        android:layout_alignParentRight="true"
+        android:onClick="scanQR"
+        android:text="@string/qr_scan" />
+
+    <TextView
+        android:id="@+id/textView_help"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/QREncode"
+        android:layout_marginTop="47dp"
+        android:text="@string/main_help"
+        android:textAppearance="?android:attr/textAppearanceLarge" />
+
+</RelativeLayout>
